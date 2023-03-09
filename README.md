@@ -2,6 +2,8 @@
 
 ## * Documentación URL
 
+https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=installing
+
 https://www.ibm.com/docs/en/app-connect/containers_cd?topic=operator-installing-red-hat-openshift
 
 https://www.ibm.com/docs/en/app-connect/containers_cd?topic=operator-installing-kubernetes
