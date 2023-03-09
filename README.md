@@ -1,14 +1,14 @@
 # IBM APP Connect Enterprise Workshop
 
-## * Documentation URL
+## * Documentación URL
 
 https://www.ibm.com/docs/en/app-connect/containers_cd?topic=operator-installing-red-hat-openshift
 
 https://www.ibm.com/docs/en/app-connect/containers_cd?topic=operator-installing-kubernetes
 
-## * Access Repo Server
+## * Acceso Repo Server
 
-1.- Get the ssh key from files folder
+1.- Obtener la clave ssh del directorio files
 
 2.- `#ssh -i id_rsa root@169.63.186.109`
 
