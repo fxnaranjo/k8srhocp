@@ -1,0 +1,65 @@
+apiVersion: appconnect.ibm.com/v1beta1
+kind: IntegrationServer
+metadata:
+  name: test
+  namespace: ace
+spec:
+  license:
+    accept: true
+    license: L-APEH-CJUCNR
+    use: AppConnectEnterpriseProduction
+  barURL: 'https://169.63.186.109/mybars/Openbankingproject.generated.bar'
+  configurations:
+    - bar-credentials
+  pod:
+    containers:
+      runtime:
+        resources:
+          limits:
+            cpu: 500m
+            memory: 2048Mi
+          requests:
+            cpu: 300m
+            memory: 1024Mi
+  adminServerSecure: false
+  enableMetrics: true
+  createDashboardUsers: false
+  router:
+    timeout: 120s
+  designerFlowsOperationMode: disabled
+  service:
+    endpointType: http
+  version: '12.0.7.0-r2'
+  replicas: 1
+  logFormat: basic
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/instance: test
+    app.kubernetes.io/managed-by: ibm-appconnect
+    app.kubernetes.io/name: test
+    appconnect.ibm.com/kind: IntegrationServer
+    release: test
+  name: aceapp-service
+  namespace: ace
+spec:
+  ports:
+  - name: http
+    port: 7800
+    protocol: TCP
+    targetPort: 7800
+  - name: webui
+    port: 7600
+    protocol: TCP
+    targetPort: 7600
+  selector:
+    app.kubernetes.io/instance: test
+    app.kubernetes.io/managed-by: ibm-appconnect
+    app.kubernetes.io/name: test
+    release: test
+  sessionAffinity: None
+  type: NodePort
