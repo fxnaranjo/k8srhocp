@@ -21,3 +21,10 @@ https://169.63.186.109/mybars
 ## * Pasos Generales Kubernetes
 
 ![ws1](https://github.com/fxnaranjo/k8srhocp/raw/main/images/pasosWorkshop1.png "ws1")
+
+
+***
+
+## * Pasos Generales Openshift
+
+![ws1](https://github.com/fxnaranjo/k8srhocp/raw/main/images/pasosWorkshop2.png "ws1")
