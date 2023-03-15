@@ -12,7 +12,9 @@ https://www.ibm.com/docs/en/app-connect/containers_cd?topic=operator-installing-
 
 1.- Obtener la clave ssh del directorio files
 
-2.- `#ssh -i id_rsa root@169.63.186.109`
+2.- `#chmod 400 id_rsa`
+
+3.- `#ssh -i id_rsa root@169.63.186.109`
 
 ## * Bars Repo URL
 
