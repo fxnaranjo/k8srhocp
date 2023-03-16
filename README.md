@@ -30,6 +30,7 @@ https://169.63.186.109/mybars
 ***
 
 ## * Pasos Generales Openshift
+Para Openshift todas las configuraciones se realizan utilizando la consola web
 
 ![ws1](https://github.com/fxnaranjo/k8srhocp/raw/main/images/pasosWorkshop2.png "ws1")
 
