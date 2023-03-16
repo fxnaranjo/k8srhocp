@@ -23,7 +23,7 @@ https://169.63.186.109/mybars
 ***
 
 ## * Pasos Generales Kubernetes
-
+El paso de la preparación de la máquina para la instalación de OLM ya fue realizado
 ![ws1](https://github.com/fxnaranjo/k8srhocp/raw/main/images/pasosWorkshop1.png "ws1")
 
 
