@@ -14,7 +14,7 @@ https://www.ibm.com/docs/en/app-connect/containers_cd?topic=operator-installing-
 
 2.- `#chmod 400 id_rsa`
 
-3.- `#scp -i id_rsa root@169.63.186.109:/var/www/html/mybars`
+3.- `#scp -i id_rsa <barfile> root@169.63.186.109:/var/www/html/mybars`
 
 ## * Bars Repo URL
 
