@@ -8,13 +8,13 @@ https://www.ibm.com/docs/en/app-connect/containers_cd?topic=operator-installing-
 
 https://www.ibm.com/docs/en/app-connect/containers_cd?topic=operator-installing-kubernetes
 
-## * Acceso Repo Server
+## * Copia de bar file Repo Server
 
-1.- Obtener la clave ssh del directorio files
+1.- Obtener la clave ssh del directorio files de este repositorio
 
 2.- `#chmod 400 id_rsa`
 
-3.- `#ssh -i id_rsa root@169.63.186.109`
+3.- `#scp -i id_rsa root@169.63.186.109:/var/www/html/mybars`
 
 ## * Bars Repo URL
 
